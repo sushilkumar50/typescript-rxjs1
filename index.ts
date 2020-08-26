@@ -1,6 +1,7 @@
-// Import stylesheets
-import './style.css';
+console.clear();
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+interface Observer<T> {
+  next(value: T): void;
+  error(err: any): void;
+  complete(): void;
+}
